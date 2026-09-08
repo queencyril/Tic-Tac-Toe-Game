@@ -349,3 +349,74 @@ ol {
     transform: scale(1);
   }
 }
+
+/* media query for smaller screens */
+@media (max-width: 600px) {
+  /* Logo */
+  header img {
+    width: 5rem;
+    margin: 1.5rem auto 0.5rem auto;
+  }
+
+  /* Title */
+  h1 {
+    font-size: 2rem;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  /* Game container */
+  #game-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  
+  #players {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  #players li {
+    width: 100%;
+  }
+
+  .player-name {
+    width: 7rem;
+    font-size: 0.8rem;
+    padding: 0.35rem;
+  }
+
+  .player input {
+    width: 7rem;
+    font-size: 0.8rem;
+    padding: 0.35rem;
+  }
+
+  .player-symbol {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  #players button {
+    width: 2.5rem;
+    font-size: 0.75rem;
+    padding: 0.35rem 4.8rem;
+  }
+
+
+  #game-board {
+    gap: 0.75rem;
+    margin: 2rem 0;
+  }
+
+  #game-board ol {
+    gap: 0.75rem;
+  }
+
+  #game-board button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+}
